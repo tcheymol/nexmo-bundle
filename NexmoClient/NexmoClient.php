@@ -51,7 +51,7 @@ class NexmoClient {
      * @param boolean $disable_delivery
      * @param LoggerInterface $logger
      */
-    public function __construct($api_key,$api_secret,$api_method='GET',$delivery_phone,$disable_delivery=false,LoggerInterface $logger) {
+    public function __construct($api_key,$api_secret,$api_method='GET',$delivery_phone = '',$disable_delivery=false,LoggerInterface $logger) {
         $this->rest_url = 'https://rest.nexmo.com';
         $this->api_key = $api_key;
         $this->api_secret = $api_secret;
